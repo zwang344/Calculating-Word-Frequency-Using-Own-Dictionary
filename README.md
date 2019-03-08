@@ -4,7 +4,6 @@ import pandas as pd
 
 path = ''
 
-#automatically read all same file type in the folder
 reviewlist = []
 for eachfile in glob.glob(os.path.join(path, '*.csv')):
     f = pd.read_csv(eachfile)
@@ -31,7 +30,7 @@ for review in reviewlist:
         word_count[word] = review.count(word)
     wordcount_list.append(word_count)
 
-rowname = ['a', 'b','c','d','e','f','g']
+rowname = []
 
 wordcount_matrix = pd.DataFrame(wordcount_list, index=rowname)
 wordcount_matrix
