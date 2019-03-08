@@ -1,4 +1,3 @@
-# Calculating-Word-Frequency-Using-Own-Dictionary
 import os
 import glob
 import pandas as pd
